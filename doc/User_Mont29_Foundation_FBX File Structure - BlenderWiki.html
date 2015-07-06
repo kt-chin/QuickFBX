@@ -1,0 +1,848 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="MediaWiki 1.16.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="BlenderWiki (en)" />		<title>User:Mont29/Foundation/FBX File Structure - BlenderWiki</title>
+		<script type="text/javascript" src="/skins/naiad/js/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="/skins/naiad/js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/skins/naiad/js/jquery.tinyscrollbar.min.js"></script>
+		<script type="text/javascript" src="/skins/naiad/js/jquery.blenderwiki.js"></script>
+
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/naiad/main.css?270"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins/common/commonPrint.css?270" />
+
+		<!--[if IE 7]><style type="text/css">@import "/skins/naiad/IE70Fixes.css?270";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js?270"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript" src="/skins/common/wikibits.js?270"><!-- wikibits js --></script>
+		<script type="text/javascript" src="/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=naiad"><!-- site js --></script>
+<link rel="stylesheet" type="text/css" href="/index.php?title=MediaWiki:Common.css&amp;action=raw&amp;ctype=text/css&amp;smaxage=18000"/>
+<link rel="stylesheet" type="text/css" href="/index.php?title=MediaWiki:Naiad.css&amp;action=raw&amp;ctype=text/css&amp;smaxage=18000"/>
+		<!-- Head Scripts -->
+<script type="text/javascript" src="/extensions/TreeAndMenu/dtree.js"><!-- TreeAndMenu --></script>
+
+<script type="text/javascript" src="/extensions/BlenderTreeAndMenu/dtree.js"><!-- BlenderTreeAndMenu --></script>
+
+<script src="/skins/common/ajax.js?270"></script>
+<script src="/skins/common/mwsuggest.js?270"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1418081-7']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+		<link rel="shortcut icon" href="/skins/naiad/images/favicon.ico" />
+
+
+	</head>
+<body  class="mediawiki  ltr ns-2 ns-subject page-User_Mont29_Foundation_FBX_File_Structure">
+
+<!-- START main page container -->
+<div id="pagecontainer">
+
+	<!-- START subsection header and subnav -->
+	<div id="headerWrapper">
+		<div class="subnav boxheader">
+			<div id="left_controls">
+				<a id="logo" href="/index.php/Main_Page" title="Go to Main Page">
+					<img src="/skins/naiad/images/blender_logo.png" />
+				</a>
+				<ul class="external_nav">
+					<li><a href="http://www.blender.org" title="Go to blender.org website">blender.org</a></li>
+					<li><a href="http://code.blender.org" title="Go to blender development blog">code.blender.org</a></li>
+				</ul>
+			</div>
+			<h1 class="title_link">
+				User:Mont29/Foundation/FBX File Structure			</h1>
+			
+						<span class="right_controls">
+				
+								
+				<a class="userid" href="/index.php?title=Special:UserLogin&amp;returnto=User:Mont29/Foundation/FBX_File_Structure">Log in</a>
+				
+							</span>
+	
+		</div>
+		<div id="p-cactions" class="subnav sublevel2">
+			<div id="contentSub"><span class="subpages">&lt; <a href="/index.php/User:Mont29" title="User:Mont29">User:Mont29</a> | <a href="/index.php/User:Mont29/Foundation" title="User:Mont29/Foundation">Foundation</a></span></div>
+			
+			<div id="dd_selectors">
+															
+			</div>
+			
+			<ul id="content_actions">
+					   										<li id="ca-nstab-user" class="selected">
+							 <a href="/index.php/User:Mont29/Foundation/FBX_File_Structure">User page</a>
+						</li>
+						   										<li id="ca-talk" class="new">
+							 <a href="/index.php?title=User_talk:Mont29/Foundation/FBX_File_Structure&amp;action=edit&amp;redlink=1">Discussion</a>
+						</li>
+						   										<li id="ca-viewsource">
+							 <a href="/index.php?title=User:Mont29/Foundation/FBX_File_Structure&amp;action=edit">View source</a>
+						</li>
+						   										<li id="ca-history">
+							 <a href="/index.php?title=User:Mont29/Foundation/FBX_File_Structure&amp;action=history">History</a>
+						</li>
+								</ul>
+								
+			<div id="extras_two" class="dd_item">
+				<div class="button grey"><p>Page</p></div>
+				<div class="dd_menu extras_two">
+				
+					<ul>
+									   							   							   							   											
+												<li id="t-whatlinkshere">
+							<a href="/index.php/Special:WhatLinksHere/User:Mont29/Foundation/FBX_File_Structure">What links here</a>
+						</li>
+														<li id="t-recentchangeslinked">
+								<a href="/index.php/Special:RecentChangesLinked/User:Mont29/Foundation/FBX_File_Structure">Related changes</a>
+							</li>
+														<li id="t-permalink"><a href="/index.php?title=User:Mont29/Foundation/FBX_File_Structure&amp;oldid=251773">Permanent link</a></li>					</ul>
+					
+				</div>
+        	</div>
+			
+		</div>
+	</div>
+        <!-- END subsection header and subnav -->
+
+	<div id="globalWrapper">
+		<div id="col-content">
+			<div id="content">
+				<a name="top" id="top"></a>
+								<div id="bodyContent">
+					<h3 id="siteSub">From BlenderWiki</h3>
+					
+															<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					
+					<!-- START content -->
+					<script>if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<h1> <span class="mw-headline" id="FBX_File_Structure">FBX File Structure</span></h1>
+<p>Since we have the <a href="http://code.blender.org/index.php/2013/08/fbx-binary-file-format-specification/" class="external text" rel="nofollow">binary file format</a> itself, this doc attempt to gather knowledge about FBX structure (typical content of a file, but also usage of properties and templates, etc.).
+</p><p>Warning: Heavily WIP, as we have to guess what does what here (no official doc about how things work)!
+</p><p><b>We try to focus on latest version (7.3, or even 7.4)!</b>
+</p><p>Note: Once we have something more or less complete here, we could move it to the blog page as well…
+</p>
+<h2> <span class="mw-headline" id="Generalities">Generalities</span></h2>
+<p>FBX is a nodal format, with a root element (which is never explicitly written) and a tree of children.
+</p><p>Each element has an id (byte string), and can have data and children elements.
+</p><p>Data are a set of (values, type) tuples, available types are: bool, short, int, long, float, double, bytes, string, and arrays of those types.
+</p><p>Here is a (JSON) representation of an element:
+</p>
+<pre>["Element_ID",                         # ID
+     ["data_string", 13],              # Data
+     "SI",                             # Data types, as single-char codes (S for String, I for Integer, etc.)
+     [__other_children_elements__]
+]
+</pre>
+<p>Everything is based on this simple schema.
+</p>
+<h3> <span class="mw-headline" id="Properties">Properties</span></h3>
+<p>Properties are a way to add heavily typed data.
+</p><p>Properties are represented by elements children of a "Properties70" element, which does not contain any data.
+</p><p>Each property is an element. Its ID does not seem to be important (usually, it's "P" or "PS" for all of them). Their data layout follow that schema:
+</p>
+<pre>["PropName", "PropType", "Label(?)", "Flags", __values__, …]
+</pre>
+<p>In other words, the four first data of a property are always strings (its name, its type, presumably its label (often empty), and some flags (optional)), they are the "metadata" of the property. The other data are the property's value (usually only one, but e.g. for colors or 3D vectors they are three - and some property types have no value&nbsp;:/), and their type depends on the data type!
+</p><p>Note that the three metadata defining the property's type looks rather fuzzy, they may change between versions. 
+</p><p>Flags are still a very fuzzy, here is what is known currently:
+</p>
+<ul><li>'U' means the property is user-defined (it does not exist by default in FBX).
+</li><li>'A' means the property is animatable.
+</li><li>'+' also found in some files, assuming currently it means 'animated' (always following 'A' flag).
+</li><li>'H' <b>highly speculative</b> hidden?
+</li><li>'L7' <b>highly speculative</b> could be the four 'Locked' flags (number being four bits bitflag)?
+</li></ul>
+<p>See also <a href="http://help.autodesk.com/view/FBX/2015/ENU/?guid=__cpp_ref_class_fbx_property_flags_html" class="external text" rel="nofollow">the SDK doc</a>, unfortunately as usual no info on actual FBX representation of those flags…
+</p><p>Further about animatable properties: Looks like the first two metadata depend whether the property is animatable or not, finally. E.g. a non-animatable float64 will be ("double", "Number", ""), while an animatable float64 will be ("Number", "", "") - at least, that what’s infereable from reading "official" FBX files.
+</p><p>Bellow are some basic examples of properties:
+</p>
+<pre>Integer: ["P", ["some_name", "int", "Integer", "", 1], "SSSSI", []]
+Double:  ["P", ["some_name", "double", "Number", "", 1.0], "SSSSD", []]
+Color:   ["P", ["some_name", "ColorRGB", "Color", "", 0.0, 0.0, 0.0], "SSSSDDD", []]
+</pre>
+<p>It seems properties can also be grouped, using the "Compound" type (which has no value), e.g.:
+</p>
+<pre>["P", ["Original", "Compound", "", ""], "SSSS", []],
+["P", ["Original|ApplicationVendor", "KString", "", "", ""], "SSSSS", []],
+["P", ["Original|ApplicationName", "KString", "", "", ""], "SSSSS", []],
+["P", ["Original|ApplicationVersion", "KString", "", "", ""], "SSSSS", []],
+["P", ["Original|DateTime_GMT", "DateTime", "", "", ""], "SSSSS", []],
+["P", ["Original|FileName", "KString", "", "", ""], "SSSSS", []],
+</pre>
+<p>Groups are defined by the properties’ names starting by the same value as their “parent” property’s name (using '|' as separator).
+</p>
+<h4> <span class="mw-headline" id="Some_Specific_Property_Types">Some Specific Property Types</span></h4>
+<ul><li>KTime: FBX timestamp, a signed int64, unit being 1/46186158000 seconds…
+</li></ul>
+<h3> <span class="mw-headline" id="Templates">Templates</span></h3>
+<p>Each template is defined by an "ObjectType" element, which takes a single property, the name of the template, which is also the name of the Object they “define” (e.g. "Model", "Geometry", "Material", etc.).
+</p><p>Each template has two children: "Count" is the number of Objects using this template, and "PropertyTemplate", which simply contains some properties.
+</p><p>To summarize, here is the generic structure of a template definition:
+</p>
+<pre>["ObjectType", ["Geometry"], "S", [            # Start of template definition
+    ["Count", [1], "I", []],                   # Number of Objects using this template
+    ["PropertyTemplate", ["KFbxMesh"], "S", [  # Start of template's properties
+        ["Properties70", [], "", [
+            ["P", ["Color", "ColorRGB", "Color", "", 0.8, 0.8, 0.8], "SSSSDDD", []],
+            ["P", ["BBoxMin", "Vector3D", "Vector", "", 0.0, 0.0, 0.0], "SSSSDDD", []],
+            ["P", ["BBoxMax", "Vector3D", "Vector", "", 0.0, 0.0, 0.0], "SSSSDDD", []],
+            ...
+        ]]
+    ]]
+]],
+</pre>
+<p>Note GlobalSettings also seems to have its template definition, though it is not an Object…
+</p><p>The name data of the "PropertyTemplate" element are some kind of sub-types. Usually, they directly use classes’ names from the SDK.
+</p>
+<table class="note">
+
+<tr>
+<td><div class="note_title">Sub-type Name</div>
+<div class="note_content">In FBX 7.3, sub-type names seems to use SDK class names prefixed with a 'K' (like 'KFbxFileTexture'), while in 7.4 the 'K' seems to have disappeared…</div>
+</td></tr></table>
+<p><br />
+Templates define some kind of “default values”, which can be overridden by each Object if needed.
+</p><p>There is another issue with templates: e.g. lights, cameras, nulls, etc. share the same "global" element type, while they do have separated sub-types, which their own set of properties. Unfortunately, templates are defined for “global” type, and do not look to handle several set of property definitions, so you have to chose one subtype in this case, and do without template at all for the other subtypes (though to counter of the template must remain the total number of users of the “global” type…).
+</p>
+<h2> <span class="mw-headline" id="Top_Structure">Top Structure</span></h2>
+<p>A valid FBX file must contain a set of standard elements:
+</p>
+<ul><li><b>FBXHeaderExtension</b>: Mandatory? Contains the metadata of the file.
+</li><li><b>FileId</b>: Mandatory. Some kind of (currently) obscure hash, apparently based on the CreationTime data.
+</li><li><b>CreationTime</b>: Mandatory. The date/time of creation of that file, as a single string (e.g. "2013-08-05 10:27:44:000").
+</li><li><b>Creator</b>: Mandatory? A string identifying the tool used to create that FBX.
+</li><li><b>GlobalSettings</b>: Mandatory? A set of properties defining general data, like the orientation of the scene…
+</li><li><b>Documents</b>: Optional. Not sure what it is used for actually, so far only saw FBX files with a single doc definition here… Maybe it allows for several scenes in a single FBX?
+</li><li><b>References</b>:&nbsp;???
+</li><li><b>Definitions</b>: Optional. Here templates are defined.
+</li><li><b>Objects</b>: Optional. Here real, useful, static (?) data are stored (objects, geometries, textures, materials, etc.).
+</li><li><b>Connections</b>: Optional. Here are defined links between data defined in Objects (e.g. which object uses which material, etc.).
+</li><li><b>Takes</b>: Optional. Here animations are defined?
+</li></ul>
+<h3> <span class="mw-headline" id="FBXHeaderExtension">FBXHeaderExtension</span></h3>
+<p>…
+</p>
+<h3> <span class="mw-headline" id="FileId_and_CreationTime">FileId and CreationTime</span></h3>
+<p>Those two fields are used as some kind of obscure “signing” of the file. It seems to use the CreationTime to generate the FileId, but we still do not know how, so currently we use a dummy timestamp (0 since epoch) and fixed fileid… Investigation needed here!
+</p>
+<h3> <span class="mw-headline" id="GlobalSettings">GlobalSettings</span></h3>
+<p>…
+</p>
+<h3> <span class="mw-headline" id="Documents">Documents</span></h3>
+<p>Not sure what it is used for currently - looks like FBX could support multiple documents (like in, multiple scenes?), but only found single-doc examples so far... To be investigated.
+</p><p>Contains a "Count" element (number of documents), and a set of "Document" elements.
+</p><p>Each Document contains three data, an UID (as int64), an always empty string, and a name. Its children are a set of properties, and a "RootNode" with a unique int64 value (always 0, most likely an offset of some kind, have no more hints here).
+</p>
+<pre>["Documents", [], "", [
+    ["Count", [1], "I", []],
+    ["Document", [151925416, "", "Scene"], "LSS", [
+        ["Properties70", [], "", [
+            ["P", ["SourceObject", "object", "", ""], "SSSS", []],
+            ["P", ["ActiveAnimStackName", "KString", "", "", ""], "SSSSS", []]
+        ]],
+        ["RootNode", [0], "L", []]
+    ]]
+]]
+</pre>
+<h3> <span class="mw-headline" id="References">References</span></h3>
+<p>Currently have absolutely no idea what this is. Usually empty in examples I found.
+</p>
+<h3> <span class="mw-headline" id="Definitions">Definitions</span></h3>
+<p>Contains a Version element, a Count one (which gives the total number of data elements using those template definitions), and a set of <a href="#Templates">template definitions</a>:
+</p>
+<pre>["Definitions", [], "", [
+    ["Version", [100], "I", []],
+    ["Count", [12], "I", []],
+    ["ObjectType", ["GlobalSettings"], "S", [
+        ...
+    ]],
+    ["ObjectType", ["Model"], "S", [
+        ...
+    ]],
+    ...
+]]
+</pre>
+<h3> <span class="mw-headline" id="Objects">Objects</span></h3>
+<p>Objects are a set of elements of various kind (light data, camera data, geometry data, object data, material, texture, etc.), which later get linked together in the <a href="#Connections">Connections section</a>, using their UIDs.
+</p><p>All data have a similar top-level element, which seems to use a standard name depending on its content type, has three data (the first one being its UID, the second a 'name::class' pair, and the third a sort of sub-class), and a set of children, including properties:
+</p>
+<pre> ["NodeAttribute", [                 # Main class
+         151952504,                  # The UID.
+         "::NodeAttribute",          # Name::Class
+         "CameraSwitcher"            # Sub-class
+     ], "LSS", [
+     ["Properties70", [], "", [
+         ["P", ["Camera Index", "Integer", "", "A+", 100], "SSSSI", []]
+     ]],
+     ["Version", [101], "I", []],
+     ...
+ ]]
+</pre>
+<p>The name::class separator (represented as '::' here) in binary format is in fact the chain <code>b"\x00\x01"</code>.
+</p><p>Note it looks like some children elements sometimes repeat content from properties (e.g. for cameras, "Position", "UpVector" and "InterestPosition" properties have same content as "Position", "Up" and "LookAt" children elements respectively). Probably some compatibility matters.
+</p>
+<h3> <span class="mw-headline" id="Connections">Connections</span></h3>
+<p>Connections simply defines links between objects (like a given material is used by a given object, etc.):
+</p>
+<pre> ["Connections", [], "", [
+     ["C", ["OO", 152171968, 0], "SLL", []],
+     ["C", ["OO", 152161640, 0], "SLL", []],
+     ["C", ["OP", 152102088, 987654321, "Lcl Translation"], "SLLS", []],
+     …
+ ]]
+</pre>
+<p>Each connection is an element of name "C", with following data:
+</p>
+<ul><li> A code string defining the nature of the relation (so far, found "OO" for object linked to object, and "OP" for object linked to property.
+</li><li> A first UID (the "child").
+</li><li> A second UID (the "parent", if 0 it is the (implicit) root node of the FBX doc).
+</li><li> In case of object-to-property connection, a string which is the name of the parent’s property the child is linked to. This is used e.g. to assign a texture to the diffuse, specular, ambient, etc. property of a material. Note that property may be an “Properties70” one, or a direct parent's element one.
+</li></ul>
+<p>I also saw in a few files "PO" relations (property children of element), and I guess we could also imagine "PP" ones - but we do not have to bother about those currently, did not hit any use case yet.
+</p>
+<h3> <span class="mw-headline" id="Takes">Takes</span></h3>
+<p>This is the old (deprecated even?) animation system, looks like letting it empty in 7.4 files does not hurt…
+</p>
+<h2> <span class="mw-headline" id="Main_Data_-_Objects">Main Data - Objects</span></h2>
+<h3> <span class="mw-headline" id="Model">Model</span></h3>
+<ul><li><b>Class: FbxObject::FbxNode</b>
+</li></ul>
+<dl><dd><b>Connected to root element (0) or another Model in case of parenting.</b>
+</dd></dl>
+<p>These elements are roughly equivalent to Blender’s Objects. They define basic location, rotation and scale, as well as a bunch of advanced settings related to the same topics.
+</p>
+<table class="note">
+
+<tr>
+<td><div class="note_title">Cameras…</div>
+<div class="note_content">When linked to camera data, Models also contain some camera data (like width/eight, etc.). Not sure though this is not a remnant from older versions of the format…</div>
+</td></tr></table>
+<p><br />
+</p>
+<h4> <span class="mw-headline" id="Transformations_Constraints">Transformations Constraints</span></h4>
+<p>Any FBX Model can have translation/rotation/scaling limits, enabled by a "...Active" bool property, and with global or per-axis min/max values.
+</p><p>It can also have some "track to"-like relations, using another object of the scene as target (and optionally another one as up-target). However, how this works is still unclear (relevant properties are "object" type, which holds no value…).
+</p>
+<h4> <span class="mw-headline" id="Spaces_.26_Parenting">Spaces &amp; Parenting</span></h4>
+<p>Transformations of a Model (mostly "Lcl Translation", "Lcl Rotation" [Euler, in degrees] and "Lcl Scaling") are always in parent space, or world space in no parent is present ("Lcl" stands for "Local"). This is also correct for bones, since in FBX they are roughly represented as chains of parented Models (see <a href="#Armature_and_Bones_Armature_and_Bones">#Armature_and_Bones Armature and Bones</a> below).
+</p><p>However, there are three ways to apply child transformations in parent space, controlled by the "InheritType" enum property (FbxTransform::EInheritType):
+</p>
+<ul><li>eInheritRrSs (0).
+</li><li>eInheritRSrs (1).
+</li><li>eInheritRrs (2).
+</li></ul>
+<p>Uppercase are for parent (rotation/scaling), lowercase are for child.
+</p><p>With Blender parenting and in bone chains, we should use RSrs, which matches usual 3×3 matrix multiplications (as far as I understand!). And we could also maybe use Rrs to match our disabled "Inherit Scale" bone option?
+</p>
+<h3> <span class="mw-headline" id="Light_Data">Light Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxNodeAttribute::FbxLight</b>
+</li></ul>
+<dl><dd><b>Connected to a Model.</b>
+</dd></dl>
+<p>Roughly equivalent to Blender’s Lamp (type of light source, energy, direction, etc.).
+</p>
+<h3> <span class="mw-headline" id="Camera_Data">Camera Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxNodeAttribute::FbxCamera</b>
+</li></ul>
+<dl><dd><b>Connected to a Model</b> (plus another, “virtual” Model for CameraSwitcher?).
+</dd></dl>
+<ul><li><b>Class: FbxObject::FbxNodeAttribute::FbxCameraSwitcher</b>
+</li></ul>
+<p>Camera data are divided in two entities, camera itself, and “camera switcher”, which I have not much hints about yet.
+</p><p><code>Camera</code> embeds object-level data (position and orientation).
+<code>Camera</code> expects values for its sensor’s size to be in inches!
+<code>Camera</code> expects values for its angles to be in degrees.
+</p>
+<h3> <span class="mw-headline" id="Mesh_Data">Mesh Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxNodeAttribute::FbxLayerContainer::FbxGeometryBase::FbxGeometry::FbxMesh</b>
+</li></ul>
+<dl><dd><b>Connected to a Model.</b>
+</dd></dl>
+<p>Roughly equivalent to Blender’s Mesh.
+</p><p>This is in the “Layer” element family, i.e. it can contains several data of the same type (one per layer), e.g. for UV maps or VCol layers. The general structure is:
+</p>
+<pre> ["Geometry", [152167664, "Name::Geometry", "Mesh"], "LSS", [
+     ["Vertices", [[&lt;array_of_floats&gt;]], "d", []],
+     ["PolygonVertexIndex", [[&lt;array_of_integers&gt;]], "i", []],
+     ["Edges", [[&lt;array_of_integers&gt;]], "i", []],
+     ["GeometryVersion", [124], "I", []],
+     ["LayerElementNormal", [0], "I", [
+         ["Version", [101], "I", []],
+         ["Name", [""], "S", []],
+         ["MappingInformationType", ["ByVertice"], "S", []],
+         ["ReferenceInformationType", ["Direct"], "S", []],
+         ["Normals", [[&lt;array_of_floats&gt;]], "d", []]
+     ]],
+     ["LayerElementSmoothing", [0], "I", [
+         ["Version", [102], "I", []],
+         ["Name", [""], "S", []],
+         ["MappingInformationType", ["ByPolygon"], "S", []],
+         ["ReferenceInformationType", ["Direct"], "S", []],
+         ["Smoothing", [[&lt;array_of_integers&gt;]], "i", []]  # Yep, int32 for bool values...
+     ]],
+     ["LayerElementUV", [0], "I", [
+         ["Version", [101], "I", []],
+         ["Name", ["UVMap"], "S", []],
+         ["MappingInformationType", ["ByPolygonVertex"], "S", []],
+         ["ReferenceInformationType", ["IndexToDirect"], "S", []],
+         ["UV", [[&lt;array_of_floats&gt;]], "d", []],
+         ["UVIndex", [[&lt;array_of_integers&gt;]], "i", []],
+     ]],
+     ["LayerElementUV", [1], "I", [
+         ["Version", [101], "I", []],
+         ["Name", ["UVMap.001"], "S", []],
+         ["MappingInformationType", ["ByPolygonVertex"], "S", []],
+         ["ReferenceInformationType", ["IndexToDirect"], "S", []],
+         ["UV", [[&lt;array_of_floats&gt;]], "d", []],
+         ["UVIndex", [[&lt;array_of_integers&gt;]], "i", []],
+     ]],
+     ["LayerElementMaterial", [0], "I", [
+         ["Version", [101], "I", []],
+         ["Name", ["gold"], "S", []],
+         ["MappingInformationType", ["AllSame"], "S", []],
+         ["ReferenceInformationType", ["IndexToDirect"], "S", []],
+         ["Materials", [[0]], "i", []]
+     ]],
+     ["Layer", [0], "I", [
+         ["Version", [100], "I", []],
+         ["LayerElement", [], "", [
+             ["Type", ["LayerElementNormal"], "S", []],
+             ["TypedIndex", [0], "I", []]
+         ]],
+         ["LayerElement", [], "", [
+             ["Type", ["LayerElementMaterial"], "S", []],
+             ["TypedIndex", [0], "I", []]
+         ]],
+         ["LayerElement", [], "", [
+             ["Type", ["LayerElementSmoothing"], "S", []],
+             ["TypedIndex", [0], "I", []]
+         ]]
+     ]]
+     ["Layer", [1], "I", [
+         ["Version", [100], "I", []],
+         ["LayerElement", [], "", [
+             ["Type", ["LayerElementUV"], "S", []],
+             ["TypedIndex", [1], "I", []]
+         ]],
+     ]]
+ ]]
+</pre>
+<p>Here again, the '::' is just a convention, in binary format is in fact the chain <code>b"\x00\x01"</code>.
+</p><p>So, we have first the basic data:
+</p>
+<ul><li> Vertices: a flatten array of coords (so if verts[0] == (1.0, 2.0, 0.5), array starts with [1.0, 2.0, 0.5, ...]).
+</li><li> Polygons (defined by vertices indices, the last index of a polygon is negated).
+</li><li> Edges (optional). Edges are defined in quite an odd way: each index here refers to a <i>polygon</i>’s array index, so that the edge is defined by this polygon’s vertex and the next one in the same polygon. Why make things simple when you can make them complex?
+</li></ul>
+<p>Then, you have the layer elements (uvs, materials, vcol, smooth, etc.). Those layer elements can affect vertices, edges, faces, faces’ vertices (what we call “loops” in Blender code) or everything. Except for the latest case, you can map layer data to affected geometry elements in two different ways:
+</p>
+<ul><li> Direct: item <i>n</i> in layer data array affects (vertice|edge|face|loop) <i>n</i>. <b>WARNING</b> though it shall not be allowed (see <a href="http://download.autodesk.com/us/fbx/SDKdocs/FBX_SDK_Help/files/fbxsdkref/class_k_fbx_layer_element.html#445e03e8b14d7132b6f88dc6250a3394" class="external text" rel="nofollow">FBX SDK doc</a>, it seems <i>official</i> FBX exporters accept truncated arrays in this mode (e.g. only two vcols items in a mesh containing tens of vertices…).
+</li><li> IndexToDirect: layer data only contains singular values, and an additional integer array maps each geometry element to a value in layer data array (or to nothing - mapping index is <b>-1</b>). So e.g. if UVs of loop 5 and loop 8 are the same, the fifth and eighth items of layer index array will both have the same value, which points to the correct UV triplet in layer data.
+</li></ul>
+<p>And once all layer element have been defined, you have to define the layers themselves, which contain them. There can only be one layer element of each type in a layer.
+</p>
+<h3> <span class="mw-headline" id="Null_Data">Null Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxNodeAttribute::FbxNull</b>
+</li></ul>
+<dl><dd><b>Connected to a Model.</b>
+</dd></dl>
+<p>Roughly equivalent to Blender’s Empty.
+</p>
+<h3> <span class="mw-headline" id="Armature_and_Bones">Armature and Bones</span></h3>
+<p>In FBX, there is no real armature concept, you rather have chains of bones, which are nearly only defined by "Model" elements (FbxNode), i.e. loc/rot/scale from parent bone. Root bones are children of an empty object (Model), which plays the role of an armature.
+</p><p>In other words, armatures are presented more like a set of chains of parented-hooks.
+</p><p>Each bone/hook is represented by a "LimbNode", which also contains a "Size" parameter (its length), not sure this is used/understood by all importers though.
+</p><p>Bones and mesh are "linked" first by a BindPose element, which stores the (transform) matrix of the mesh and all bones in global (world) space, at the time of binding.
+</p><p>Second "link" is the Deformer (Skin) element, which is kind of similar to Blender's vertex group system for armatures. This element stores SubDeformers (a.k.a. Clusters), one per bone, with 'binding' weights for each vertex/control point, and some transform matrices.
+</p><p>Those transform matrices are not yet much clear to me, as far as I understand, they refer to transformations of mesh/armature/bone at binding time:
+</p>
+<ul><li> Transform is the transformation of the mesh, <b>in the bone's space!</b>.
+</li><li> TransformLink is the transformation of the bone, in global space.
+</li><li> TransformAssociateModel would be transformation of the armature object??? Not quite sure why it’b be needed…
+</li></ul>
+<p>To summarize connections:
+</p>
+<ul><li> LimbNode (bone data) -&gt; Model (bone transformations, mere Empty object linked parent bone's one as any other Model parent relationship).
+</li><li> LimbNode (bone data) -&gt; Cluster (kind of 'vgroup') -&gt; Skin -&gt; Geometry (usually mesh data).
+</li></ul>
+<p>BindPose has its own 'linking' system, that does not use connections (yes, FBX…). All children PoseNode elements have a Node property that contains the numeric ID of the element (mesh or bone) they represent. I would assume this is an old, somewhat deprecated system, in favor to the cluster/skin one… But we can still find many FBX files around that only partly use deformers, so for now in importer we use deformers if available, and fallback to bindpose otherwise.
+</p>
+<h3> <span class="mw-headline" id="Shape_Keys">Shape Keys</span></h3>
+<p>Shape keys handling are very similar to armatures one in FBX 7.x.
+</p><p>First, you define your shapes, as special Geometry elements ('Shape'). They only store a list of vertex indices, and matching coordinates and normals (normals often stored as NULL vector, not sure yet what it means). Note that the shaped mesh element gets one animatable num prop for each of its shape keys, looks like two different anim systems of the shape's influence coexist here…&nbsp;:/
+</p><p>It also generates a BindPose in this case, but against the <b>Model</b> element, not the <b>Geometry</b> one of the mesh… And I really do not see what’s the use of the bindnode matrix here - will ignore completely that for now, <i>sigh</i>.
+</p><p>Main (and probably future-proof&nbsp;?) way to link a shape to its mesh is done through the Deformer system - here main element is a “BlendShape” element, and subdeformers are “BlendShapeChannel”. Those have a global animatable DeformPercent property, and an FullWeights array of factors, that I assume to be some kind of per-vertex weighting, we can probably ignore that in Blender for now.
+</p>
+<ul><li> Shape -&gt; BlendShapeChannel -&gt; BlendShape -&gt; Geometry (usually mesh data).
+</li></ul>
+<h3> <span class="mw-headline" id="Material_Data">Material Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxSurfaceMaterial</b>
+</li></ul>
+<dl><dd><b>Connected to a Model.</b>
+</dd></dl>
+<p>FBX supports two kind of materials, basic Lambert/Phong shading, and custom shaders. Unfortunately, the laters only support closed shaders (HLSL and CGSL), no GLSL, so we won’t see those here (for now).
+</p><p>Basic shading will hence make you use either FbxSurfaceMaterialLambert (subclass of surfacematerial, for diffuse only) or FbxSurfaceMaterialPhong (subclass of lambert one, for diffuse + specular shading).
+</p><p>Note the data node itself is always simply called "Material", and you specify either "phong" or "lambert" in the "ShadingModel" element:
+</p>
+<pre> ["Material", [1055568016, "default::Material", ""], "LSS", [
+     ["Version", [102], "I", []],
+     ["ShadingModel", ["phong"], "S", []],
+     ["MultiLayer", [0], "I", []],
+     ["Properties70", [], "", [
+         ["P", ["ShadingModel", "KString", "", "", "phong"], "SSSSS", []],
+         ["P", ["EmissiveFactor", "Number", "", "A", 0.0], "SSSSD", []],
+         ["P", ["AmbientColor", "Color", "", "A", 0.5879999995231628, 0.5879999995231628, 0.5879999995231628], "SSSSDDD", []],
+         ["P", ["DiffuseColor", "Color", "", "A", 0.5879999995231628, 0.5879999995231628, 0.5879999995231628], "SSSSDDD", []],
+         ...
+     ]]
+ ]]
+</pre>
+<p>Multilayer is actually a bool, I think, not sure yet what it means/controls exactly.
+</p><p>Depending on the app, in theory most properties of materials can be controlled by textures (linking a texture e.g. to the "DiffuseColor" property is how apply a texture to a material's color!), see <a href="#Texture_Data">below</a> for more details.
+</p><p>Note that meshes can have a LayerElementMaterial layer, which assigns a given material to a given face. Materials here are referenced by a mere index (instead of UIDs as everywhere else in modern FBX), <b>which is the order in which they are linked to the object (FBX node)!</b>
+</p>
+<h3> <span class="mw-headline" id="Texture_Data">Texture Data</span></h3>
+<ul><li><b>Class: FbxObject::FbxTexture::FbxFileTexture</b>
+</li></ul>
+<dl><dd><b>Connected to a Material.</b>
+</dd></dl>
+<ul><li><b>Class: FbxObject::FbxVideo</b>
+</li></ul>
+<dl><dd><b>Connected to a FileTexture.</b>
+</dd></dl>
+<p>Textures are divided in two elements in FBX:
+</p>
+<ul><li>The texture itself, which contains mapping data, and is linked to materials’ properties ("OP" connections).
+</li><li>The “Video” (or “Clip”), which references pictures, and is also used for static images (liked to Texture elements).
+</li></ul>
+<p>The Texture (TextureVideoClip type) contains all mapping data (can be UV of course, but also simple cube/sphere/tube projection, etc.). It also contains file path, even though Video also has those data. Note there seems to be <b>no way to choose a specific UVmap for a given texture</b>! At least, found none…
+</p><p>The Video (Clip type) contains the actual image/video path, together with some info like its name. It can also embed the binary data of the image/video, in "Content" byte array element.
+</p><p>Note in theory, there is also a support of procedural textures, but these are mere opaque blob of data, unusable for us.
+</p><p>We may also use the layered textures to match situations where several textures affect a same property of a same material. Would first check whether it’s supported enough well across applications, though!
+</p>
+<h3> <span class="mw-headline" id="Animation">Animation</span></h3>
+<ul><li><b>Class: FbxObject::FbxCollection::FbxAnimStack</b>
+</li></ul>
+<dl><dd><b>Connected to noting!</b>
+</dd></dl>
+<ul><li><b>Class: FbxObject::FbxCollection::FbxAnimLayer</b>
+</li></ul>
+<dl><dd><b>Connected to an AnimStack.</b>
+</dd></dl>
+<ul><li><b>Class: FbxObject::FbxAnimCurveNode</b>
+</li></ul>
+<dl><dd><b>Connected to an AnimLayer and a Node's property.</b>
+</dd></dl>
+<ul><li><b>Class: FbxObject::FbxAnimCurveBase::FbxAnimCurve</b>
+</li></ul>
+<dl><dd><b>Connected to an AnimCurveNode's property.</b>
+</dd></dl>
+<p>(New) animation in FBX is actually fairly simple: you have a Stack (usually only one per FBX file, else you may have compatibility issues), to which a set of Layers are linked.
+</p><p>AnimLayers are similar to Blender’s Actions. You may have several Layers affecting a same object’s property, with blending effects, however we won’t seek for such complexity in our exporter!
+</p><p>A set of CurveNodes is linked to each AnimLayer, which define which properties are animated:
+</p>
+<pre> ["AnimationCurveNode", [2045776, "T::AnimCurveNode", ""], "LSS", [
+     ["Properties70", [], "", [
+         ["P", ["d", "Compound", "", ""], "SSSS", []]]]]]]],
+         ["P", ["d|X", "Number", "", "A", 2.227995], "SSSSD", []],
+         ["P", ["d|Y", "Number", "", "A", 3.0238389999999997], "SSSSD", []],
+         ["P", ["d|Z", "Number", "", "A", -1.49012e-08], "SSSSD", []]]]]]
+</pre>
+<p>This CurveNode, once linked to a Model’s Lcl Translation property, will control its location. Note that in theory, a same CurveNode can control several properties of several objects (but we won’t mess with that either in Blender!).
+</p><p>Note how it uses a unique Compound property, with one item per channel of the target property. So for translation &amp; co, you’ll have three, for “factor” properties you’ll only have one, etc. Those compound properties must be of the same type as the target ones, their values are presumed to be “default” ones… The naming scheme of those props remains a bit fuzzy currently.
+</p><p>Finally, an AnimCurve is linked to each prop of the CurveNode:
+</p>
+<pre> ["AnimationCurve", [924545958, "::AnimCurve", ""], "LSS", [
+     ["Default", [-120.30426094607161], "D", []],
+     ["KeyVer", [4008], "I", []],
+     ["KeyTime", [[1847446320, 3694892640, 5542338960, 7389785280, 9237231600, 11084677920, 12932124240, 14779570560, 16627016880, 18474463200, 20321909520, 22169355840, 24016802160, 25864248480, 27711694800, 29559141120, 31406587440, 33254033760, 35101480080, 36948926400, 38796372720, 90524869680]], "l", []],
+     ["KeyValueFloat", [[-90.00000762939453, -90.16700744628906, -90.67182159423828, -91.51591491699219, -92.69371032714844, -94.19062042236328, -95.98118591308594, -98.02799224853516, -100.28105926513672, -102.67914581298828, -105.1521224975586, -107.62510681152344, -110.02317810058594, -112.27626037597656, -114.32304382324219, -116.11365509033203, -117.61054229736328, -118.78833770751953, -119.63243103027344, -120.13725280761719, -120.30426025390625, -120.30426025390625]], "f", []],
+     ["KeyAttrFlags", [[24840]], "i", []],
+     ["KeyAttrDataFloat", [[0.0, 0.0, 9.419963346924634e-30, 0.0]], "f", []],
+     ["KeyAttrRefCount", [[22]], "i", []]]]
+</pre>
+<p>An anim curve has a default value (presumably always a double?), a version, like most of other "Data" elements in FBX, an array of time indices (in <a href="#Some_Specific_Property_Types">KTime</a> format), an array of values (float ones, sigh), both defining the basis of keyframes. Then you have three KeyAttr… elements. First one is an array of flags, gathering a whole bunch of behavior for the keyframes (types of interpolation, etc.). Second one is an array of float values, four per defined flags, which probably control things like TBC and other advanced keyframe features. Finally, the RefCount array contains, for each flag (and matching float data), the number of keys using it. So if you use the same flag for all keys, you can only write it one, and set here the number of keys in your curve. I you use (flag/floatdata) A for first ten keys, then (flag/floatdata) B for five keys, then again (flag/floatdata) A for ten keys, you’ll have something like that (for twenty five keys):
+</p>
+<pre> ["KeyAttrFlags", [[A, B, A]], "i", []],
+ ["KeyAttrDataFloat", [[A1, A2, A3, A4, B1, B2, B3, B4, A1, A2, A3, A4]], "f", []],
+ ["KeyAttrRefCount", [[10, 5, 10]], "i", []]]]
+</pre>
+<p>Now here comes the funny little trick: for binary format, AnimationStack and AnimationLayer elements need the 13-NULL sentinel, even when they do have properties but no elements (unlike any other type of element in bin FBX, as far as we know).
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 212/1000000
+Post-expand include size: 511/2097152 bytes
+Template argument size: 339/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mediawiki_1_16_2_live_110303-mediawiki_:pcache:idhash:55984-0!1!0!!en!2!edit=0 and timestamp 20150519090053 -->
+<div class="printfooter">
+Retrieved from "<a href="http://wiki.blender.org/index.php/User:Mont29/Foundation/FBX_File_Structure">http://wiki.blender.org/index.php/User:Mont29/Foundation/FBX_File_Structure</a>"</div>
+					<div id="catlinks"><div id='catlinks' class='catlinks catlinks-allhidden'></div></div>					<!-- END content -->
+					
+					<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- START column left -->
+		<div id="column-one">
+		
+			<div id="navtree_selector">
+<div class="dd_button"><p>User:Mont29</p></div>
+<div class="dd_content">
+<ul><li> <span>Unversioned</span>
+</li><li> <a href="/index.php/Main_Page" title="Main Page">Main Page</a>
+</li><li> <a href="/index.php/Dev:Contents" title="Dev:Contents">Blender Development</a>
+</li><li> <span>Blender 2.6</span>
+</li><li> <a href="/index.php/Doc:2.6/Manual" title="Doc:2.6/Manual">User Manual</a>
+</li><li> <a href="/index.php/Doc:2.6/Tutorials" title="Doc:2.6/Tutorials">Tutorials</a>
+</li><li> <a href="/index.php/Doc:2.6/Books" title="Doc:2.6/Books">Books</a>
+</li><li> <a href="/index.php/Extensions:2.6/Py/Scripts" title="Extensions:2.6/Py/Scripts">Scripts</a>
+</li><li> <a href="http://www.blender.org/documentation/blender_python_api_2_72_release" class="external text" rel="nofollow">2.72 Python API <i>(external link)</i></a>
+</li><li> <a href="/index.php/Dev:2.6" title="Dev:2.6">Blender Development</a>
+</li><li> <span>Blender 2.5</span>
+</li><li> <a href="http://www.blender.org/documentation/blender_python_api_2_59_release" class="external text" rel="nofollow">2.59 Python API <i>(external link)</i></a>
+</li><li> <a href="/index.php/Dev:2.5" title="Dev:2.5">Blender Development</a>
+</li><li> <span>Blender 2.4</span>
+</li><li> <a href="/index.php/Doc:2.4/Manual" title="Doc:2.4/Manual">User Manual</a>
+</li><li> <a href="/index.php/Doc:2.4/Tutorials" title="Doc:2.4/Tutorials">Tutorials</a>
+</li><li> <a href="/index.php/Doc:2.4/Books" title="Doc:2.4/Books">Books</a>
+</li><li> <a href="/index.php/Extensions:2.4/Py/Scripts" title="Extensions:2.4/Py/Scripts">Scripts</a>
+</li><li> <a href="http://www.blender.org/documentation/249PythonDoc" class="external text" rel="nofollow">2.49 Python API <i>(external link)</i></a>
+</li><li> <a href="/index.php/Dev:2.4" title="Dev:2.4">Blender Development</a>
+</li></ul>
+</div>
+</div>
+				
+			<div id="scrollbar2">
+				
+				<div class="viewport">
+					<div class="overview">
+						<!-- START navtree -->
+						</ul><p><div class='dtree' id='siteTree'>
+	<script type="text/javascript">/*<![CDATA[*/
+		// TreeAndMenu1.1.1, 2009-07-29 – Modified for Blender wiki on 2011-08-26
+		if (typeof tree === 'undefined' || tree.obj != 'tamsiteTree') {
+			tree = new dTree('tamsiteTree');
+			for (i in tree.icon) tree.icon[i] = '/extensions/BlenderTreeAndMenu/'+tree.icon[i];
+			tree.config.useLines = true;
+			tree.add(0,-1,'')
+		}
+		tamsiteTree = tree;
+					tamsiteTree.add(1, 0, '…');
+			tamsiteTree.add(2, 1, '…');
+			tamsiteTree.add(3, 2, '…');
+			tamsiteTree.add(4, 3, '<a href="/index.php/User:Mont29/Addons/Temp/Dev:Py/Sharing" title="User:Mont29/Addons/Temp/Dev:Py/Sharing">Sharing</a>');
+			tamsiteTree.add(5, 0, '<a href="/index.php/User:Mont29/Dev" title="User:Mont29/Dev">Dev</a>');
+			tamsiteTree.add(6, 5, '<a href="/index.php/User:Mont29/Dev/Dynamic_Sketch" title="User:Mont29/Dev/Dynamic Sketch">Dynamic Sketch</a>');
+			tamsiteTree.add(7, 6, '<a href="/index.php/User:Mont29/Dev/Dynamic_Sketch/Doc" title="User:Mont29/Dev/Dynamic Sketch/Doc">Doc</a>');
+			tamsiteTree.add(8, 5, '<a href="/index.php/User:Mont29/Dev/Mod_Stack_Preview" title="User:Mont29/Dev/Mod Stack Preview">Mod Stack Preview</a>');
+			tamsiteTree.add(9, 5, '<a href="/index.php/User:Mont29/Dev/Pose_Bone_RotScale_Parenting" title="User:Mont29/Dev/Pose Bone RotScale Parenting">Pose Bone RotScale Parenting</a>');
+			tamsiteTree.add(10, 5, '<a href="/index.php/User:Mont29/Dev/UI_Template_List_Enhancement" title="User:Mont29/Dev/UI Template List Enhancement">UI Template List Enhancement</a>');
+			tamsiteTree.add(11, 5, '<a href="/index.php/User:Mont29/Dev/WeightVGroup" title="User:Mont29/Dev/WeightVGroup">WeightVGroup</a>');
+			tamsiteTree.add(12, 11, '<a href="/index.php/User:Mont29/Dev/WeightVGroup/Dev" title="User:Mont29/Dev/WeightVGroup/Dev">Dev</a>');
+			tamsiteTree.add(13, 11, '<a href="/index.php/User:Mont29/Dev/WeightVGroup/Man" title="User:Mont29/Dev/WeightVGroup/Man">Man</a>');
+			tamsiteTree.add(14, 0, '<a href="/index.php/User:Mont29/Foundation" title="User:Mont29/Foundation">Foundation</a>');
+			tamsiteTree.add(15, 14, '<a href="/index.php/User:Mont29/Foundation/2013" title="User:Mont29/Foundation/2013">2013</a>');
+			tamsiteTree.add(16, 14, '<a href="/index.php/User:Mont29/Foundation/2014" title="User:Mont29/Foundation/2014">2014</a>');
+			tamsiteTree.add(17, 14, '<a href="/index.php/User:Mont29/Foundation/2015" title="User:Mont29/Foundation/2015">2015</a>');
+			tamsiteTree.add(18, 14, '<a href="/index.php/User:Mont29/Foundation/Assets" title="User:Mont29/Foundation/Assets">Assets</a>');
+			tamsiteTree.add(19, 18, '<a href="/index.php/User:Mont29/Foundation/Assets/Design_Proposal_I" title="User:Mont29/Foundation/Assets/Design Proposal I">Design Proposal I</a>');
+			tamsiteTree.add(20, 18, '<a href="/index.php/User:Mont29/Foundation/Data_Transfer/Data_Transfer_Manual" title="User:Mont29/Foundation/Data Transfer/Data Transfer Manual">Data Transfer Manual</a>');
+			tamsiteTree.add(21, 14, '<a href="/index.php/User:Mont29/Foundation/FBX_File_Structure" title="User:Mont29/Foundation/FBX File Structure">FBX File Structure</a>');
+			tamsiteTree.add(22, 14, '<a href="/index.php/User:Mont29/Foundation/FBX_TODO_2014_07" title="User:Mont29/Foundation/FBX TODO 2014 07">FBX TODO 2014 07</a>');
+			tamsiteTree.add(23, 14, '<a href="/index.php/User:Mont29/Foundation/Split_Vertex_Normals" title="User:Mont29/Foundation/Split Vertex Normals">Split Vertex Normals</a>');
+			tamsiteTree.add(24, 23, '<a href="/index.php/User:Mont29/Foundation/Split_Vertex_Normals/Custom_Split_Normals_Manual" title="User:Mont29/Foundation/Split Vertex Normals/Custom Split Normals Manual">Custom Split Normals Manual</a>');
+			tamsiteTree.add(25, 24, '<a href="/index.php/User:Mont29/Foundation/Split_Vertex_Normals/Custom_Split_Normals_Manual/Modifier" title="User:Mont29/Foundation/Split Vertex Normals/Custom Split Normals Manual/Modifier">Modifier</a>');
+			tamsiteTree.add(26, 0, '<a href="/index.php/User:Mont29/Glossary_Extension" title="User:Mont29/Glossary Extension">Glossary Extension</a>');
+			tamsiteTree.add(27, 26, '<a href="/index.php/User:Mont29/Glossary_Extension/Doc" title="User:Mont29/Glossary Extension/Doc">Doc</a>');
+			tamsiteTree.add(28, 27, '…');
+			tamsiteTree.add(29, 28, '<a href="/index.php/User:Mont29/Modeling/Meshes/Editing/Extrusion" title="User:Mont29/Modeling/Meshes/Editing/Extrusion">Extrusion</a>');
+			tamsiteTree.add(30, 0, '<a href="/index.php/User:Mont29/Modelling_Refactor" title="User:Mont29/Modelling Refactor">Modelling Refactor</a>');
+			tamsiteTree.add(31, 30, '<a href="/index.php/User:Mont29/Modelling_Refactor/Manual" title="User:Mont29/Modelling Refactor/Manual">Manual</a>');
+			tamsiteTree.add(32, 0, '<a href="/index.php/User:Mont29/NewAnimation" title="User:Mont29/NewAnimation">NewAnimation</a>');
+			tamsiteTree.add(33, 32, '<a href="/index.php/User:Mont29/NewAnimation/AnimationDetails" title="User:Mont29/NewAnimation/AnimationDetails">AnimationDetails</a>');
+			tamsiteTree.add(34, 32, '<a href="/index.php/User:Mont29/NewAnimation/ConstraintsDetails" title="User:Mont29/NewAnimation/ConstraintsDetails">ConstraintsDetails</a>');
+			tamsiteTree.add(35, 32, '<a href="/index.php/User:Mont29/NewAnimation/Rigging" title="User:Mont29/NewAnimation/Rigging">Rigging</a>');
+			tamsiteTree.add(36, 32, '<a href="/index.php/User:Mont29/NewAnimation/RiggingDetails" title="User:Mont29/NewAnimation/RiggingDetails">RiggingDetails</a>');
+			tamsiteTree.add(37, 0, '<a href="/index.php/User:Mont29/Tests" title="User:Mont29/Tests">Tests</a>');
+			tamsiteTree.add(38, 37, '<a href="/index.php/User:Mont29/Tests/Glossary" title="User:Mont29/Tests/Glossary">Glossary</a>');
+			tamsiteTree.add(39, 0, '<a href="/index.php/User:Mont29/Text_Engine_Reflections" title="User:Mont29/Text Engine Reflections">Text Engine Reflections</a>');
+
+		document.getElementById('siteTree').innerHTML = tamsiteTree.toString();
+		
+	/*]]>*/</script>
+</div>
+</p>						<!-- END navtree -->
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<!-- END column left -->
+		
+		<!-- START column right -->
+		<div id="column-two">
+			<div id="scrollbar1">
+				<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+				<div class="viewport">
+					<div class="overview">
+			<!-- START TOC -->
+						<div class="port" id="toc">
+				    <div id="toctitle"><h2>Contents</h2></div>
+<ul id="toc-ul">
+<li class="toclevel-1 tocsection-1"><a href="#FBX_File_Structure"><span class="tocnumber">1</span> <span class="toctext">FBX File Structure</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Generalities"><span class="tocnumber">1.1</span> <span class="toctext">Generalities</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Properties"><span class="tocnumber">1.1.1</span> <span class="toctext">Properties</span></a>
+<ul>
+<li class="toclevel-4 tocsection-4"><a href="#Some_Specific_Property_Types"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Some Specific Property Types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-5"><a href="#Templates"><span class="tocnumber">1.1.2</span> <span class="toctext">Templates</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Top_Structure"><span class="tocnumber">1.2</span> <span class="toctext">Top Structure</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="#FBXHeaderExtension"><span class="tocnumber">1.2.1</span> <span class="toctext">FBXHeaderExtension</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#FileId_and_CreationTime"><span class="tocnumber">1.2.2</span> <span class="toctext">FileId and CreationTime</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#GlobalSettings"><span class="tocnumber">1.2.3</span> <span class="toctext">GlobalSettings</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Documents"><span class="tocnumber">1.2.4</span> <span class="toctext">Documents</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#References"><span class="tocnumber">1.2.5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Definitions"><span class="tocnumber">1.2.6</span> <span class="toctext">Definitions</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Objects"><span class="tocnumber">1.2.7</span> <span class="toctext">Objects</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#Connections"><span class="tocnumber">1.2.8</span> <span class="toctext">Connections</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Takes"><span class="tocnumber">1.2.9</span> <span class="toctext">Takes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Main_Data_-_Objects"><span class="tocnumber">1.3</span> <span class="toctext">Main Data - Objects</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Model"><span class="tocnumber">1.3.1</span> <span class="toctext">Model</span></a>
+<ul>
+<li class="toclevel-4 tocsection-18"><a href="#Transformations_Constraints"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Transformations Constraints</span></a></li>
+<li class="toclevel-4 tocsection-19"><a href="#Spaces_.26_Parenting"><span class="tocnumber">1.3.1.2</span> <span class="toctext">Spaces &amp; Parenting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-20"><a href="#Light_Data"><span class="tocnumber">1.3.2</span> <span class="toctext">Light Data</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Camera_Data"><span class="tocnumber">1.3.3</span> <span class="toctext">Camera Data</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="#Mesh_Data"><span class="tocnumber">1.3.4</span> <span class="toctext">Mesh Data</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Null_Data"><span class="tocnumber">1.3.5</span> <span class="toctext">Null Data</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Armature_and_Bones"><span class="tocnumber">1.3.6</span> <span class="toctext">Armature and Bones</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#Shape_Keys"><span class="tocnumber">1.3.7</span> <span class="toctext">Shape Keys</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="#Material_Data"><span class="tocnumber">1.3.8</span> <span class="toctext">Material Data</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Texture_Data"><span class="tocnumber">1.3.9</span> <span class="toctext">Texture Data</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="#Animation"><span class="tocnumber">1.3.10</span> <span class="toctext">Animation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+			</div>
+						<!-- END TOC -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- END column left -->
+	
+	</div>
+	<div class="visualClear"></div>
+	<div id="footer" class="boxbg">
+
+
+	<form action="/index.php/Special:Search" id="searchform">
+		<div id="p-search-div">
+			<input onfocus="if (this.value == 'quick search...') {this.value=''}; this.style.color='#000'" onblur="if (this.value == '') {this.value = 'quick search...'; this.style.color='#999';}" value="quick search..." id="searchInput" name="search" type="text" autocomplete="on"  value="" />
+			<!-- <input type="hidden" value="en" id="searchLang" name="searchLang"> -->
+			<!-- <input type="hidden" value="" id="searchSer" name="searchSer"> -->
+			<button type="submit" title="Quick search" name="fulltext" id="searchGoButton"><img src="/skins/naiad/images/magnifier.png" /></button>
+		</div>
+		
+	</form>
+	
+			
+	<div id="wiki_dd" class="dd_item">
+		<div class="button grey">
+			<p>Wiki</p>
+		</div>
+		<div class="dd_menu wiki">
+
+			<ul>
+									<li id="n-Report-a-wiki-bug">
+						<a href="http://projects.blender.org/tracker/?atid=510&amp;group_id=163&amp;func=browse">
+						Report a wiki bug</a>
+					</li>
+									<li id="n-Wiki-Guidelines">
+						<a href="/index.php/Meta:Guides/Writer_Guide">
+						Wiki Guidelines</a>
+					</li>
+							</ul>
+			
+			<ul>
+				
+			</ul>
+		
+			<ul>
+				<li id="t-specialpages"><a href="/index.php/Special:SpecialPages">Special pages</a></li>				
+									<li id="n-Categories">
+						<a href="/index.php/Special:Categories">
+						Categories</a>
+					</li>					<li id="n-Popular-pages">
+						<a href="/index.php/Special:PopularPages">
+						Popular pages</a>
+					</li>					<li id="n-New-files">
+						<a href="/index.php/Special:NewFiles">
+						New files</a>
+					</li>					<li id="n-New-pages">
+						<a href="/index.php/Special:NewPages">
+						New pages</a>
+					</li>					<li id="n-recentchanges">
+						<a href="/index.php/Special:RecentChanges">
+						Recent changes</a>
+					</li>			</ul>
+
+			<ul>
+							</ul>
+			
+		</div>
+	</div>
+	
+
+				<a title="Powered by mediawiki.org" class="poweredbyico" href="http://www.mediawiki.org/">
+					<img src="/skins/naiad/images/poweredby_mediawiki.png" alt="power" />
+				</a>
+ 			<ul class="links">
+						<li id="viewcount">This page has been accessed 8,089 times.</li>
+			</ul>
+         			    
+		</div>
+		
+	
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served in 1.033 secs. --></body><!-- Cached 20150519090055 -->
+</html>
