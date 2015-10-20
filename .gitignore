@@ -34,3 +34,6 @@
 *.sdf
 *.idb
 *.pdb
+
+*.swp
+test/1.txt

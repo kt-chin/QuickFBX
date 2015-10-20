@@ -160,7 +160,7 @@ inline void fbx_file::init(const char *begin, const char *end) {
 }
 
 inline void fbx_file::dump(node &n, int depth) {
-    printf("%*s%08x..%08x %s\n", depth*2, "", n.offset(), n.end_offset(), n.name().c_str());
+    printf("%*s%08zx..%08zx %s\n", depth*2, "", n.offset(), n.end_offset(), n.name().c_str());
     for (auto p : n.props()) {
         printf("%*s   %c %s\n", depth*2, "", p.kind(), ((std::string)p).c_str());
     }
