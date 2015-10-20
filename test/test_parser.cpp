@@ -6,6 +6,8 @@
 char buf[0x100000];
 
 int main() {
-    quickfbx::fbx_file p("c:/tmp/cube.fbx");
+    quickfbx::fbx_file p("../../test/cube.fbx");
 }
+
+
 

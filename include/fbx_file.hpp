@@ -124,11 +124,13 @@ private:
 
 inline fbx_file::fbx_file(const std::string &filename) {
     std::ifstream f(filename, std::ios_base::binary);
-    f.seekg(0, std::ios_base::end);
-    bytes.resize((size_t)f.tellg());
-    f.seekg(0, std::ios_base::beg);
-    f.read((char*)bytes.data(), bytes.size());
-    quickfbx::fbx_file p((char*)bytes.data(), (char*)bytes.data() + f.gcount());
+    if (!f.bad()) {
+      f.seekg(0, std::ios_base::end);
+      bytes.resize((size_t)f.tellg());
+      f.seekg(0, std::ios_base::beg);
+      f.read((char*)bytes.data(), bytes.size());
+      quickfbx::fbx_file p((char*)bytes.data(), (char*)bytes.data() + f.gcount());
+    }
 }
 
 inline void fbx_file::init(const char *begin, const char *end) {
